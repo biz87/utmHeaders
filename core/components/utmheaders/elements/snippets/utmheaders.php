@@ -4,7 +4,8 @@
 /** @var utmHeaders $utmHeaders */
 $utmHeaders = $modx->getService('utmHeaders', 'utmHeaders', MODX_CORE_PATH . 'components/utmheaders/model/');
 if (!$utmHeaders) {
-    return 'Could not load utmHeaders class!';
+    $modx->log(modX::LOG_LEVEL_ERROR, 'Could not load utmHeaders class!');
+    return '';
 }
 
 $pdo = $modx->getService('pdoTools');
