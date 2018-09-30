@@ -1,7 +1,7 @@
 --------------------
 utmHeaders
 --------------------
-Author: John Doe <john@doe.com>
+Author: Nikolay Savin <info@megawebs.kz>
 --------------------
 
-A basic Extra for MODx Revolution.
+change content by $_GET params
