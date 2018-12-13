@@ -46,3 +46,22 @@ Ext.extend(utmHeaders.combo.Search, Ext.form.TwinTriggerField, {
 });
 Ext.reg('utmheaders-combo-search', utmHeaders.combo.Search);
 Ext.reg('utmheaders-field-search', utmHeaders.combo.Search);
+
+MODx.combo.Resource = function(config) {
+    config = config || {};
+    Ext.applyIf(config,{
+        name: 'resource_id'
+        ,hiddenName: 'id'
+        ,displayField: 'pagetitle'
+        ,valueField: 'id'
+        ,fields: ['pagetitle','id']
+        ,pageSize: 20
+        ,url: MODx.config.connector_url
+        ,baseParams: {
+            action: 'resource/getlist'
+        }
+    });
+    MODx.combo.Resource.superclass.constructor.call(this,config);
+};
+Ext.extend(MODx.combo.Resource,MODx.combo.ComboBox);
+Ext.reg('modx-combo-resource',MODx.combo.Resource);

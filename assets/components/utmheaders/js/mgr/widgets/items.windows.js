@@ -41,6 +41,10 @@ Ext.extend(utmHeaders.window.CreateItem, MODx.Window, {
             name: 'active',
             id: config.id + '-active',
             checked: true,
+        },{
+            xtype: 'modx-combo-resource',
+            fieldLabel: _('utmheaders_item_resource_id'),
+            anchor: '99%'
         }];
     },
 
