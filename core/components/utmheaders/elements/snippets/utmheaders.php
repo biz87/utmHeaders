@@ -17,7 +17,9 @@ if(isset($_GET[$key_field])){
 
     $item =  $modx->getObject('utmHeadersItem', array('utmkey' => $key));
     if($item){
-        $data = $item->toArray();
+        if(intval($item->resource_id) > 0 && intval($item->resource_id) === $modx->resource->id){
+            $data = $item->toArray();
+        }
     }
 }
 $output = $pdo->getChunk($tpl, $data);

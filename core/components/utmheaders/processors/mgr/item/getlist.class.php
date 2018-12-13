@@ -98,12 +98,17 @@ class utmHeadersItemGetListProcessor extends modObjectGetListProcessor
             'menu' => true,
         ];
 
-
-        if($page = $this->modx->getObject('modResource', array('id' => $array['resource_id']))){
-            $array['resource'] = $page->pagetitle;
+        if(intval($array['resource_id']) > 0){
+            if($page = $this->modx->getObject('modResource', array('id' => $array['resource_id']))){
+                $array['resource'] = $page->pagetitle;
+            }else{
+                $array['resource'] = 'Страница отсутствует';
+            }
         }else{
-            $array['resource'] = 'Страница отсутствует';
+            $array['resource'] = 'Страница не назначена';
+
         }
+
 
 
         return $array;
