@@ -182,7 +182,7 @@ Ext.extend(utmHeaders.grid.Items, MODx.grid.Grid, {
     },
 
     getFields: function () {
-        return ['id', 'utmkey', 'header', 'active', 'actions'];
+        return ['id', 'utmkey', 'header', 'active', 'resource_id', 'actions'];
     },
 
     getColumns: function () {
@@ -199,6 +199,11 @@ Ext.extend(utmHeaders.grid.Items, MODx.grid.Grid, {
         }, {
             header: _('utmheaders_item_header'),
             dataIndex: 'header',
+            sortable: false,
+            width: 250,
+        }, {
+            header: _('utmheaders_item_short_resource_id'),
+            dataIndex: 'resource_id',
             sortable: false,
             width: 250,
         }, {

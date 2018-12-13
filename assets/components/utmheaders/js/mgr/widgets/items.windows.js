@@ -101,6 +101,10 @@ Ext.extend(utmHeaders.window.UpdateItem, MODx.Window, {
             boxLabel: _('utmheaders_item_active'),
             name: 'active',
             id: config.id + '-active',
+        },{
+            xtype: 'modx-combo-resource',
+            fieldLabel: _('utmheaders_item_resource_id'),
+            anchor: '99%'
         }];
     },
 

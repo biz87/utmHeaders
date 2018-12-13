@@ -51,7 +51,7 @@ MODx.combo.Resource = function(config) {
     config = config || {};
     Ext.applyIf(config,{
         name: 'resource_id'
-        ,hiddenName: 'id'
+        ,hiddenName: 'resource_id'
         ,displayField: 'pagetitle'
         ,valueField: 'id'
         ,fields: ['pagetitle','id']
