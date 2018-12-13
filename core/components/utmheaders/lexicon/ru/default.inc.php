@@ -10,7 +10,7 @@ $_lang['utmheaders_item_id'] = 'Id';
 $_lang['utmheaders_item_utmkey'] = 'Метка';
 $_lang['utmheaders_item_header'] = 'Заголовок';
 $_lang['utmheaders_item_resource_id'] = 'Страница, к которому относится правило';
-$_lang['utmheaders_item_short_resource_id'] = 'Страница правила';
+$_lang['utmheaders_item_resource'] = 'Страница правила';
 $_lang['utmheaders_item_active'] = 'Активно';
 
 $_lang['utmheaders_item_create'] = 'Создать вариант';

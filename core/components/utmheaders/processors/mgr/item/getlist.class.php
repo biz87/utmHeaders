@@ -98,6 +98,14 @@ class utmHeadersItemGetListProcessor extends modObjectGetListProcessor
             'menu' => true,
         ];
 
+
+        if($page = $this->modx->getObject('modResource', array('id' => $array['resource_id']))){
+            $array['resource'] = $page->pagetitle;
+        }else{
+            $array['resource'] = 'Страница отсутствует';
+        }
+
+
         return $array;
     }
 

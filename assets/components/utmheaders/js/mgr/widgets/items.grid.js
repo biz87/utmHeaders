@@ -202,7 +202,7 @@ Ext.extend(utmHeaders.grid.Items, MODx.grid.Grid, {
             sortable: false,
             width: 250,
         }, {
-            header: _('utmheaders_item_short_resource_id'),
+            header: _('utmheaders_item_resource'),
             dataIndex: 'resource_id',
             sortable: false,
             width: 250,
